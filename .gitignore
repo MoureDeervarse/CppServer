@@ -30,3 +30,93 @@
 *.exe
 *.out
 *.app
+
+# written by chatgpt on below ...
+# --- OS-specific files ---
+.DS_Store
+Thumbs.db
+
+# --- Compiler-generated files ---
+*.obj
+*.o
+*.lo
+*.slo
+*.la
+*.al
+*.libs
+*.so
+*.so.*
+*.a
+*.lib
+*.dll
+*.exe
+*.out
+*.app
+
+# --- Build directories ---
+/Builds/
+/bin/
+/lib/
+/dist/
+/Debug/
+/Release/
+/x64/
+/x86/
+
+# --- CMake generated files ---
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+CPack*
+_install/
+*.cmake
+
+# --- VSCode ---
+.vscode/
+*.code-workspace
+
+# --- CLion ---
+.idea/
+cmake-build-*/
+
+# --- Visual Studio ---
+.vs/
+*.vcxproj*
+*.sln
+*.user
+*.ncb
+*.opensdf
+*.sdf
+*.suo
+*.vcxproj.*
+ipch/
+*.pdb
+
+# --- Logs and temp files ---
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.orig
+
+# --- Server data (you might want to keep this private) ---
+/config/*.json
+/config/*.yaml
+*.db
+*.sqlite
+/secrets/
+.env
+.env.*
+
+# --- Crash dumps and core files ---
+core
+core.*
+
+# --- Game-specific temp files (adjust as needed) ---
+/logs/
+/crashdump/
+/saves/
+/cache/
