@@ -4,7 +4,7 @@
 #include "Utils/Lock.h"
 
 int staticNum = 0;
-SpinLock spinLock;
+SpinLock spinLock(true);
 
 void AddStaticNum()
 {
@@ -26,7 +26,6 @@ void MinStaticNum()
 
 int main() {
     std::thread first_thread = std::thread(MinStaticNum);
-
     std::thread second_thread = std::thread(AddStaticNum);
 
     first_thread.join();
