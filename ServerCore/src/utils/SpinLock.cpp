@@ -1,6 +1,6 @@
 #include <thread>
 
-#include "utils/Lock.h"
+#include "utils/SpinLock.h"
 
 SpinLock::SpinLock(bool isWaitable) {
     useYield = isWaitable;

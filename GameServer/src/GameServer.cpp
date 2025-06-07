@@ -1,7 +1,7 @@
 #include <thread>
 
 #include "Core.h"
-#include "utils/Lock.h"
+#include "utils/SpinLock.h"
 
 int staticNum = 0;
 SpinLock spinLock(true);
